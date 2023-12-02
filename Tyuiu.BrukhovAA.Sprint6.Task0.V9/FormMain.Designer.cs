@@ -96,6 +96,7 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task0.V9
             this.textBoxVarX_BAA.Name = "textBoxVarX_BAA";
             this.textBoxVarX_BAA.Size = new System.Drawing.Size(100, 20);
             this.textBoxVarX_BAA.TabIndex = 4;
+            this.textBoxVarX_BAA.Text = "3";
             this.textBoxVarX_BAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxVarX_KeyPress);
             // 
             // labelVarX_BAA

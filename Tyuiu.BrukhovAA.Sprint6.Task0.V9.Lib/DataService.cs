@@ -12,8 +12,16 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task0.V9.Lib
     {
         public double Calculate(int x)
         {
-            double y = (4 - Math.Pow(x, 3)) / Math.Pow(x, 2);
-            return Math.Round(y, 3);
+            double y;
+            if(x != 0)
+            {
+                y = (4 - Math.Pow(x, 3)) / Math.Pow(x, 2);
+            }
+            else
+            {
+                y = 0;
+            }
+                return Math.Round(y, 3);
         }
     }
 }

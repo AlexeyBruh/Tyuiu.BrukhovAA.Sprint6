@@ -31,18 +31,18 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task1.V11
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxRead_BAA = new System.Windows.Forms.GroupBox();
-            this.textBoxRead_BAA = new System.Windows.Forms.TextBox();
             this.pictureBoxRead_BAA = new System.Windows.Forms.PictureBox();
+            this.textBoxRead_BAA = new System.Windows.Forms.TextBox();
             this.groupBoxData_BAA = new System.Windows.Forms.GroupBox();
-            this.textBoxStartStep_BAA = new System.Windows.Forms.TextBox();
-            this.textBoxStopStep_BAA = new System.Windows.Forms.TextBox();
-            this.labelStartStep_BAA = new System.Windows.Forms.Label();
             this.labelStopStep_BAA = new System.Windows.Forms.Label();
+            this.labelStartStep_BAA = new System.Windows.Forms.Label();
+            this.textBoxStopStep_BAA = new System.Windows.Forms.TextBox();
+            this.textBoxStartStep_BAA = new System.Windows.Forms.TextBox();
             this.groupBoxResult_BAA = new System.Windows.Forms.GroupBox();
+            this.labelResult_BAA = new System.Windows.Forms.Label();
             this.textBoxResult_BAA = new System.Windows.Forms.TextBox();
             this.buttonStudent_BAA = new System.Windows.Forms.Button();
             this.buttonDone_BAA = new System.Windows.Forms.Button();
-            this.labelResult_BAA = new System.Windows.Forms.Label();
             this.groupBoxRead_BAA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRead_BAA)).BeginInit();
             this.groupBoxData_BAA.SuspendLayout();
@@ -62,6 +62,15 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task1.V11
             this.groupBoxRead_BAA.TabStop = false;
             this.groupBoxRead_BAA.Text = "Условие";
             // 
+            // pictureBoxRead_BAA
+            // 
+            this.pictureBoxRead_BAA.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRead_BAA.Image")));
+            this.pictureBoxRead_BAA.Location = new System.Drawing.Point(6, 59);
+            this.pictureBoxRead_BAA.Name = "pictureBoxRead_BAA";
+            this.pictureBoxRead_BAA.Size = new System.Drawing.Size(286, 36);
+            this.pictureBoxRead_BAA.TabIndex = 1;
+            this.pictureBoxRead_BAA.TabStop = false;
+            // 
             // textBoxRead_BAA
             // 
             this.textBoxRead_BAA.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -73,15 +82,6 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task1.V11
             this.textBoxRead_BAA.TabIndex = 0;
             this.textBoxRead_BAA.Text = "Протабулировать функцию в заданном диапозоне [-5; 5].\r\nРезультат вывести в виде т" +
     "аблицы";
-            // 
-            // pictureBoxRead_BAA
-            // 
-            this.pictureBoxRead_BAA.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRead_BAA.Image")));
-            this.pictureBoxRead_BAA.Location = new System.Drawing.Point(6, 59);
-            this.pictureBoxRead_BAA.Name = "pictureBoxRead_BAA";
-            this.pictureBoxRead_BAA.Size = new System.Drawing.Size(286, 36);
-            this.pictureBoxRead_BAA.TabIndex = 1;
-            this.pictureBoxRead_BAA.TabStop = false;
             // 
             // groupBoxData_BAA
             // 
@@ -96,23 +96,14 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task1.V11
             this.groupBoxData_BAA.TabStop = false;
             this.groupBoxData_BAA.Text = "Ввод данных";
             // 
-            // textBoxStartStep_BAA
+            // labelStopStep_BAA
             // 
-            this.textBoxStartStep_BAA.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBoxStartStep_BAA.Location = new System.Drawing.Point(7, 36);
-            this.textBoxStartStep_BAA.Name = "textBoxStartStep_BAA";
-            this.textBoxStartStep_BAA.Size = new System.Drawing.Size(129, 20);
-            this.textBoxStartStep_BAA.TabIndex = 0;
-            this.textBoxStartStep_BAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxStartStep_BAA_Key);
-            // 
-            // textBoxStopStep_BAA
-            // 
-            this.textBoxStopStep_BAA.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBoxStopStep_BAA.Location = new System.Drawing.Point(151, 36);
-            this.textBoxStopStep_BAA.Name = "textBoxStopStep_BAA";
-            this.textBoxStopStep_BAA.Size = new System.Drawing.Size(129, 20);
-            this.textBoxStopStep_BAA.TabIndex = 0;
-            this.textBoxStopStep_BAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxStartStep_BAA_Key);
+            this.labelStopStep_BAA.AutoSize = true;
+            this.labelStopStep_BAA.Location = new System.Drawing.Point(148, 17);
+            this.labelStopStep_BAA.Name = "labelStopStep_BAA";
+            this.labelStopStep_BAA.Size = new System.Drawing.Size(69, 13);
+            this.labelStopStep_BAA.TabIndex = 2;
+            this.labelStopStep_BAA.Text = "Конец шага:";
             // 
             // labelStartStep_BAA
             // 
@@ -123,14 +114,25 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task1.V11
             this.labelStartStep_BAA.TabIndex = 1;
             this.labelStartStep_BAA.Text = "Старт шага:";
             // 
-            // labelStopStep_BAA
+            // textBoxStopStep_BAA
             // 
-            this.labelStopStep_BAA.AutoSize = true;
-            this.labelStopStep_BAA.Location = new System.Drawing.Point(148, 17);
-            this.labelStopStep_BAA.Name = "labelStopStep_BAA";
-            this.labelStopStep_BAA.Size = new System.Drawing.Size(69, 13);
-            this.labelStopStep_BAA.TabIndex = 2;
-            this.labelStopStep_BAA.Text = "Конец шага:";
+            this.textBoxStopStep_BAA.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.textBoxStopStep_BAA.Location = new System.Drawing.Point(151, 36);
+            this.textBoxStopStep_BAA.Name = "textBoxStopStep_BAA";
+            this.textBoxStopStep_BAA.Size = new System.Drawing.Size(129, 20);
+            this.textBoxStopStep_BAA.TabIndex = 0;
+            this.textBoxStopStep_BAA.Text = "5";
+            this.textBoxStopStep_BAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxStartStep_BAA_Key);
+            // 
+            // textBoxStartStep_BAA
+            // 
+            this.textBoxStartStep_BAA.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.textBoxStartStep_BAA.Location = new System.Drawing.Point(7, 36);
+            this.textBoxStartStep_BAA.Name = "textBoxStartStep_BAA";
+            this.textBoxStartStep_BAA.Size = new System.Drawing.Size(129, 20);
+            this.textBoxStartStep_BAA.TabIndex = 0;
+            this.textBoxStartStep_BAA.Text = "-5";
+            this.textBoxStartStep_BAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxStartStep_BAA_Key);
             // 
             // groupBoxResult_BAA
             // 
@@ -142,6 +144,15 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task1.V11
             this.groupBoxResult_BAA.TabIndex = 2;
             this.groupBoxResult_BAA.TabStop = false;
             this.groupBoxResult_BAA.Text = "Вывод данных";
+            // 
+            // labelResult_BAA
+            // 
+            this.labelResult_BAA.AutoSize = true;
+            this.labelResult_BAA.Location = new System.Drawing.Point(7, 20);
+            this.labelResult_BAA.Name = "labelResult_BAA";
+            this.labelResult_BAA.Size = new System.Drawing.Size(62, 13);
+            this.labelResult_BAA.TabIndex = 1;
+            this.labelResult_BAA.Text = "Результат:";
             // 
             // textBoxResult_BAA
             // 
@@ -178,15 +189,6 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task1.V11
             this.buttonDone_BAA.Text = "Выполнить";
             this.buttonDone_BAA.UseVisualStyleBackColor = false;
             this.buttonDone_BAA.Click += new System.EventHandler(this.buttonDone_BAA_Click);
-            // 
-            // labelResult_BAA
-            // 
-            this.labelResult_BAA.AutoSize = true;
-            this.labelResult_BAA.Location = new System.Drawing.Point(7, 20);
-            this.labelResult_BAA.Name = "labelResult_BAA";
-            this.labelResult_BAA.Size = new System.Drawing.Size(62, 13);
-            this.labelResult_BAA.TabIndex = 1;
-            this.labelResult_BAA.Text = "Результат:";
             // 
             // FormMain
             // 
