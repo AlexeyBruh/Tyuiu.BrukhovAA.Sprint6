@@ -32,27 +32,27 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task6.V6
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelButtons_BAA = new System.Windows.Forms.Panel();
+            this.buttonHelp_BAA = new System.Windows.Forms.Button();
+            this.buttonDone_BAA = new System.Windows.Forms.Button();
+            this.buttonDataLoad_BAA = new System.Windows.Forms.Button();
             this.panelRead_BAA = new System.Windows.Forms.Panel();
-            this.panelDataInput_BAA = new System.Windows.Forms.Panel();
-            this.splitterDataInput_BAA = new System.Windows.Forms.Splitter();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBoxRead_BAA = new System.Windows.Forms.GroupBox();
             this.textBoxRead_BAA = new System.Windows.Forms.TextBox();
+            this.panelDataInput_BAA = new System.Windows.Forms.Panel();
             this.groupBoxDataInput_BAA = new System.Windows.Forms.GroupBox();
             this.textBoxDataInput_BAA = new System.Windows.Forms.TextBox();
+            this.splitterDataInput_BAA = new System.Windows.Forms.Splitter();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBoxDataOutput_BAA = new System.Windows.Forms.GroupBox();
             this.textBoxDataOutput_BAA = new System.Windows.Forms.TextBox();
             this.openFileDialog_BAA = new System.Windows.Forms.OpenFileDialog();
             this.toolTipButtons_BAA = new System.Windows.Forms.ToolTip(this.components);
-            this.buttonDataLoad_BAA = new System.Windows.Forms.Button();
-            this.buttonDone_BAA = new System.Windows.Forms.Button();
-            this.buttonHelp_BAA = new System.Windows.Forms.Button();
             this.panelButtons_BAA.SuspendLayout();
             this.panelRead_BAA.SuspendLayout();
-            this.panelDataInput_BAA.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.groupBoxRead_BAA.SuspendLayout();
+            this.panelDataInput_BAA.SuspendLayout();
             this.groupBoxDataInput_BAA.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.groupBoxDataOutput_BAA.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,44 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task6.V6
             this.panelButtons_BAA.Size = new System.Drawing.Size(884, 57);
             this.panelButtons_BAA.TabIndex = 0;
             // 
+            // buttonHelp_BAA
+            // 
+            this.buttonHelp_BAA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp_BAA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHelp_BAA.Image = ((System.Drawing.Image)(resources.GetObject("buttonHelp_BAA.Image")));
+            this.buttonHelp_BAA.Location = new System.Drawing.Point(790, 3);
+            this.buttonHelp_BAA.Name = "buttonHelp_BAA";
+            this.buttonHelp_BAA.Size = new System.Drawing.Size(89, 49);
+            this.buttonHelp_BAA.TabIndex = 0;
+            this.toolTipButtons_BAA.SetToolTip(this.buttonHelp_BAA, "О программе");
+            this.buttonHelp_BAA.UseVisualStyleBackColor = true;
+            this.buttonHelp_BAA.Click += new System.EventHandler(this.buttonHelp_BAA_Click);
+            // 
+            // buttonDone_BAA
+            // 
+            this.buttonDone_BAA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDone_BAA.Enabled = false;
+            this.buttonDone_BAA.Image = ((System.Drawing.Image)(resources.GetObject("buttonDone_BAA.Image")));
+            this.buttonDone_BAA.Location = new System.Drawing.Point(98, 3);
+            this.buttonDone_BAA.Name = "buttonDone_BAA";
+            this.buttonDone_BAA.Size = new System.Drawing.Size(89, 49);
+            this.buttonDone_BAA.TabIndex = 0;
+            this.toolTipButtons_BAA.SetToolTip(this.buttonDone_BAA, "\r\nВыполнить обработку файла");
+            this.buttonDone_BAA.UseVisualStyleBackColor = true;
+            this.buttonDone_BAA.Click += new System.EventHandler(this.buttonDone_BAA_Click);
+            // 
+            // buttonDataLoad_BAA
+            // 
+            this.buttonDataLoad_BAA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDataLoad_BAA.Image = ((System.Drawing.Image)(resources.GetObject("buttonDataLoad_BAA.Image")));
+            this.buttonDataLoad_BAA.Location = new System.Drawing.Point(3, 3);
+            this.buttonDataLoad_BAA.Name = "buttonDataLoad_BAA";
+            this.buttonDataLoad_BAA.Size = new System.Drawing.Size(89, 49);
+            this.buttonDataLoad_BAA.TabIndex = 0;
+            this.toolTipButtons_BAA.SetToolTip(this.buttonDataLoad_BAA, "\r\nВыберите загружаемый файл");
+            this.buttonDataLoad_BAA.UseVisualStyleBackColor = true;
+            this.buttonDataLoad_BAA.Click += new System.EventHandler(this.buttonDataLoad_BAA_Click);
+            // 
             // panelRead_BAA
             // 
             this.panelRead_BAA.Controls.Add(this.groupBoxRead_BAA);
@@ -76,32 +114,6 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task6.V6
             this.panelRead_BAA.Name = "panelRead_BAA";
             this.panelRead_BAA.Size = new System.Drawing.Size(884, 75);
             this.panelRead_BAA.TabIndex = 1;
-            // 
-            // panelDataInput_BAA
-            // 
-            this.panelDataInput_BAA.Controls.Add(this.groupBoxDataInput_BAA);
-            this.panelDataInput_BAA.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelDataInput_BAA.Location = new System.Drawing.Point(0, 132);
-            this.panelDataInput_BAA.Name = "panelDataInput_BAA";
-            this.panelDataInput_BAA.Size = new System.Drawing.Size(430, 379);
-            this.panelDataInput_BAA.TabIndex = 2;
-            // 
-            // splitterDataInput_BAA
-            // 
-            this.splitterDataInput_BAA.Location = new System.Drawing.Point(430, 132);
-            this.splitterDataInput_BAA.Name = "splitterDataInput_BAA";
-            this.splitterDataInput_BAA.Size = new System.Drawing.Size(3, 379);
-            this.splitterDataInput_BAA.TabIndex = 3;
-            this.splitterDataInput_BAA.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.groupBoxDataOutput_BAA);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(433, 132);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(451, 379);
-            this.panel1.TabIndex = 4;
             // 
             // groupBoxRead_BAA
             // 
@@ -126,6 +138,15 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task6.V6
             this.textBoxRead_BAA.TabIndex = 0;
             this.textBoxRead_BAA.Text = resources.GetString("textBoxRead_BAA.Text");
             // 
+            // panelDataInput_BAA
+            // 
+            this.panelDataInput_BAA.Controls.Add(this.groupBoxDataInput_BAA);
+            this.panelDataInput_BAA.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelDataInput_BAA.Location = new System.Drawing.Point(0, 132);
+            this.panelDataInput_BAA.Name = "panelDataInput_BAA";
+            this.panelDataInput_BAA.Size = new System.Drawing.Size(430, 379);
+            this.panelDataInput_BAA.TabIndex = 2;
+            // 
             // groupBoxDataInput_BAA
             // 
             this.groupBoxDataInput_BAA.Controls.Add(this.textBoxDataInput_BAA);
@@ -146,6 +167,23 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task6.V6
             this.textBoxDataInput_BAA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxDataInput_BAA.Size = new System.Drawing.Size(424, 360);
             this.textBoxDataInput_BAA.TabIndex = 0;
+            // 
+            // splitterDataInput_BAA
+            // 
+            this.splitterDataInput_BAA.Location = new System.Drawing.Point(430, 132);
+            this.splitterDataInput_BAA.Name = "splitterDataInput_BAA";
+            this.splitterDataInput_BAA.Size = new System.Drawing.Size(3, 379);
+            this.splitterDataInput_BAA.TabIndex = 3;
+            this.splitterDataInput_BAA.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.groupBoxDataOutput_BAA);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(433, 132);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(451, 379);
+            this.panel1.TabIndex = 4;
             // 
             // groupBoxDataOutput_BAA
             // 
@@ -177,41 +215,6 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task6.V6
             this.toolTipButtons_BAA.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipButtons_BAA.ToolTipTitle = "Подсказка";
             // 
-            // buttonDataLoad_BAA
-            // 
-            this.buttonDataLoad_BAA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDataLoad_BAA.Image = ((System.Drawing.Image)(resources.GetObject("buttonDataLoad_BAA.Image")));
-            this.buttonDataLoad_BAA.Location = new System.Drawing.Point(3, 3);
-            this.buttonDataLoad_BAA.Name = "buttonDataLoad_BAA";
-            this.buttonDataLoad_BAA.Size = new System.Drawing.Size(89, 49);
-            this.buttonDataLoad_BAA.TabIndex = 0;
-            this.buttonDataLoad_BAA.UseVisualStyleBackColor = true;
-            this.buttonDataLoad_BAA.Click += new System.EventHandler(this.buttonDataLoad_BAA_Click);
-            // 
-            // buttonDone_BAA
-            // 
-            this.buttonDone_BAA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDone_BAA.Enabled = false;
-            this.buttonDone_BAA.Image = ((System.Drawing.Image)(resources.GetObject("buttonDone_BAA.Image")));
-            this.buttonDone_BAA.Location = new System.Drawing.Point(98, 3);
-            this.buttonDone_BAA.Name = "buttonDone_BAA";
-            this.buttonDone_BAA.Size = new System.Drawing.Size(89, 49);
-            this.buttonDone_BAA.TabIndex = 0;
-            this.buttonDone_BAA.UseVisualStyleBackColor = true;
-            this.buttonDone_BAA.Click += new System.EventHandler(this.buttonDone_BAA_Click);
-            // 
-            // buttonHelp_BAA
-            // 
-            this.buttonHelp_BAA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonHelp_BAA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonHelp_BAA.Image = ((System.Drawing.Image)(resources.GetObject("buttonHelp_BAA.Image")));
-            this.buttonHelp_BAA.Location = new System.Drawing.Point(790, 3);
-            this.buttonHelp_BAA.Name = "buttonHelp_BAA";
-            this.buttonHelp_BAA.Size = new System.Drawing.Size(89, 49);
-            this.buttonHelp_BAA.TabIndex = 0;
-            this.buttonHelp_BAA.UseVisualStyleBackColor = true;
-            this.buttonHelp_BAA.Click += new System.EventHandler(this.buttonHelp_BAA_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,12 +232,12 @@ namespace Tyuiu.BrukhovAA.Sprint6.Task6.V6
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelButtons_BAA.ResumeLayout(false);
             this.panelRead_BAA.ResumeLayout(false);
-            this.panelDataInput_BAA.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.groupBoxRead_BAA.ResumeLayout(false);
             this.groupBoxRead_BAA.PerformLayout();
+            this.panelDataInput_BAA.ResumeLayout(false);
             this.groupBoxDataInput_BAA.ResumeLayout(false);
             this.groupBoxDataInput_BAA.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.groupBoxDataOutput_BAA.ResumeLayout(false);
             this.groupBoxDataOutput_BAA.PerformLayout();
             this.ResumeLayout(false);
